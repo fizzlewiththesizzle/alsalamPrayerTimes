@@ -1,5 +1,10 @@
 # alsalamPrayerTimes
-![test image size](/static/favicon.png){:height="700px" width="400px"}
+<div style="width: 60%; height: 60%">
+  
+  ![](/static/favicon.png)
+  
+</div>
+
 A web app that displays the prayer times for MAC Al-Salam Centre based on CSV files containing the times for each day. The app is meant to be used on a vertical display.
 
 Currently hosted and accessible at https://faisal.pythonanywhere.com/
