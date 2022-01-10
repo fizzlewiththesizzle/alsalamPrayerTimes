@@ -1,5 +1,5 @@
 # alsalamPrayerTimes
-<img src="logo.png" width="50%" height="50%">
+<img src="logo.png" width="40%" height="40%">
 
 
 A web app that displays the prayer times for MAC Al-Salam Centre based on CSV files containing the times for each day. The app is meant to be used on a vertical display.
