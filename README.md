@@ -3,3 +3,4 @@ A web app that displays the prayer times for MAC Al-Salam Centre based on CSV fi
 
 Currently hosted and accessible at https://faisal.pythonanywhere.com/
  
+![Alt text](/screenshots/1.png?raw=true "Optional Title")
