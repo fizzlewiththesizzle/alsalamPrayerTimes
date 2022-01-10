@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href= "{{ url_for('static', filename='favicon.png')}}">
+    <link rel="apple-touch-icon" href= "{{ url_for('static', filename='ios-icon.png')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>Al-Salam Prayer Times</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark" style="background-color: #233d2e;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-center" style="font-size: 200%;" href="#" >
+            <img src="{{ url_for('static', filename='mac logo.png')}}" alt="" width="146" height="50" class="d-inline-block align-text-baseline">
+            Al-Salam Centre
+          </a>
+          <h1 class="display-4" style="color: white; font-size: 250%;">{{td}} <br/> {{hd}} </h1>
+        </div>
+      </nav>
+    <div class="container" style="padding-top: 2%; padding-bottom: 2%; margin-top: 5%;">
+        <table class="table table-borderless text-center">
+            <thead>
+              <tr>
+                <th scope="col">Prayer</th>
+                <th scope="col">Adhan</th>
+                <th scope="col">Iqama</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fajr</td>
+                <td>{{fa}}</td>
+                <td>{{fi}}</td>
+              </tr>
+              <tr>
+                <td>Sunrise</td>
+                <td>{{sr}}</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Dhuhr</td>
+                <td>{{da}}</td>
+                <td>{{di}}</td>
+              </tr>
+              <tr>
+                <td>Asr</td>
+                <td>{{aa}}</td>
+                <td>{{ai}}</td>
+              </tr>
+              <tr>
+                <td>Maghrib</td>
+                <td>{{ma}}</td>
+                <td>{{mi}}</td>
+              </tr>
+              <tr>
+                <td>Isha</td>
+                <td>{{ia}}</td>
+                <td>{{ii}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+    <div class="container" style="padding-top: 1%; padding-bottom: 1%; margin-top: 2%; margin-bottom: 2%;">
+        <figure class="text-center">
+            <h1 class="display-5" style="font-size: 400%; color: white;">1<sup>st</sup> Jumuah 12:00 PM</h1>
+            <h1 class="display-5" style="font-size: 400%; color: white;">2<sup>nd</sup> Jumuah 12:45 PM</h1>
+            <h1 class="display-5" style="font-size: 400%; color: white;">3<sup>rd</sup> Jumuah 1:30 PM</h1>
+        </figure>
+        <figure class="text-center">
+            <h1 class="display-4 fw-bolder" style="font-size: 600%;" id="clock"></h1>
+        </figure>
+    </div>
+    
+    <script>
+      function clock() {
+      let date = new Date();
+      let hrs = date.getHours();
+      let mins = date.getMinutes();
+      let secs = date.getSeconds();
+      let period = "AM";
+    
+      if (hrs == 0) hrs = 12;
+      if (hrs > 12) {
+        hrs = hrs - 12;
+        period = "PM";
+      }
+    
+      hrs = hrs < 10 ? `0${hrs}` : hrs;
+      mins = mins < 10 ? `0${mins}` : mins;
+      secs = secs < 10 ? `0${secs}` : secs;
+    
+      let time = `${hrs}:${mins}:${secs} ${period}`;
+      setInterval(clock, 1000);
+      document.getElementById("clock").innerText = time;
+    }
+    
+    clock();
+
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

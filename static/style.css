@@ -1,0 +1,29 @@
+.table {
+	font-size: 300%;
+}
+
+.container {
+	background: rgba(35, 61, 46, .5);    /*  10% opaque green */ 
+	border-radius: 20px;
+
+}
+
+body { 
+	background: url(IMG_2560-scaled-dark.jpg) no-repeat left center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+thead {
+	color: white;
+}
+
+tr {
+	color: white;
+}
+
+#clock {
+	color: white;
+}
