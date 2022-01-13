@@ -8,6 +8,13 @@
 
 }
 
+.center-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
 body { 
 	background: url(IMG_2560-scaled-dark.jpg) no-repeat left center fixed; 
 	-webkit-background-size: cover;
