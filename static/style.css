@@ -1,19 +1,28 @@
 .table {
-	font-size: 300%;
+	font-size: 45px;
 }
-
 .container {
 	background: rgba(35, 61, 46, .5);    /*  10% opaque green */ 
 	border-radius: 20px;
 
 }
-
 .center-image {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
   }
+  .display-4{
+	  color: white;
+	  font-size: 35px !important;
+  }
+  .display-5 {
+	  color: white;
+	  font-size: 65px !important;
+  }
+  .navbar-brand{
+	font-size: 30px !important;
+}
 
 body { 
 	background: url(IMG_2560-scaled-dark.jpg) no-repeat left center fixed; 
@@ -22,15 +31,35 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	}
-
 thead {
 	color: white;
 }
-
 tr {
 	color: white;
 }
 
 #clock {
 	color: white;
+	font-size: 75px !important;
+}
+
+@media (max-width: 768px) {
+	.table{
+		font-size: 28px;
+	}
+	.display-4{
+		font-size: 28px !important;
+	}
+	.display-5{
+		font-size: 40px !important;
+	}
+	.navbar-brand{
+		font-size: 28px !important;
+	}
+	body{
+		background-size: auto;
+	}
+	#clock {
+		font-size: 55px !important;
+	}
 }
