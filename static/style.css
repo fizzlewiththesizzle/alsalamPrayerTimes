@@ -56,8 +56,10 @@ tr {
 	.navbar-brand{
 		font-size: 28px !important;
 	}
-	body{
-		background-size: auto;
+	body {
+		background: url(IMG_2560-scaled-dark-768.png) no-repeat left center fixed; 
+		background-attachment:scroll
+
 	}
 	#clock {
 		font-size: 55px !important;
