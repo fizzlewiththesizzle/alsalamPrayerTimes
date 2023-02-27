@@ -1,0 +1,48 @@
+{
+"name": "Al-Salam Centre Prayer Times",
+"short_name": "Al-Salam Times",
+"start_url": "https://faisal.pythonanywhere.com/",
+"display": "standalone",
+"description": "A web application that displays prayer times for MAC Al-Salam Centre",
+"lang": "en",
+"dir": "auto",
+"theme_color": "#233d2d",
+"background_color": "#233d2d",
+"orientation": "any",
+"icons": [
+    {
+        "src": "https://faisal.pythonanywhere.com/static/logo-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    },
+    {
+        "src": "https://faisal.pythonanywhere.com/static/logo-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+    }
+],
+"screenshots": [
+    {
+        "src": "https://www.pythonanywhere.com/user/faisal/files/home/faisal/mysite/screenshots/2.png",
+        "sizes": "828x1792",
+        "type": "image/png",
+        "description": "A screenshot of the home page on an iPhone XR"
+    }
+],
+"related_applications": [
+    {
+        "platform":"windows",
+        "url": " The URL to your app in that app store"
+    }
+],
+"prefer_related_applications": false,
+"shortcuts": [
+    {
+        "name":"Al-Salam Prayer Times",
+        "url":"/shortcut",
+        "description":"A web application that displays prayer times for MAC Al-Salam Centre"
+    }
+]
+}

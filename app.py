@@ -1,5 +1,6 @@
 from flask import Flask, redirect, url_for, render_template
 from hijri_converter import Hijri
+from datetime import datetime, timedelta
 import csv, datetime
 
 app = Flask(__name__)
@@ -15,8 +16,10 @@ def home():
     todays_date = today.strftime("%B %d, %Y")
     hijri = Hijri.today()
     hijri_date = str(hijri.month_name()) + " " + str(hijri.datetuple()[2]) + ", " + str(hijri.datetuple()[0])
+    
     print(todays_date)
     print(hijri_date)
+    #print(type(hijri))
     #print (type(month))
 
     if month == 1:

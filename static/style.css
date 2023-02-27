@@ -26,6 +26,7 @@
 
 body { 
 	background: url(IMG_2560-scaled-dark.jpg) no-repeat left center fixed; 
+	background-color: #233d2e;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
