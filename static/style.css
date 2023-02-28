@@ -89,4 +89,10 @@ tr {
 	.h1{
 		font-size: 30px !important;
 	}
+	.announcements{
+		padding-top: 2%;
+	}
+	.jumuah{
+		padding-top: 2%;
+	}
 }
