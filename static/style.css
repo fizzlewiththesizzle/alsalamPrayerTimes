@@ -90,9 +90,9 @@ tr {
 		font-size: 30px !important;
 	}
 	.announcements{
-		padding-top: 2%;
+		padding-top: 2% !important;
 	}
 	.jumuah{
-		padding-top: 2%;
+		padding-top: 2% !important;
 	}
 }
