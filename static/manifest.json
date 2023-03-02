@@ -8,7 +8,7 @@
 "dir": "auto",
 "theme_color": "#233d2d",
 "background_color": "#233d2d",
-"orientation": "any",
+"orientation": "natural",
 "icons": [
     {
         "src": "https://faisal.pythonanywhere.com/static/logo-512.png",
