@@ -98,3 +98,42 @@ tr {
 		padding-top: 2% !important;
 	}
 }
+
+@media (max-width: 1000px) {
+	.table{
+		font-size: 26px;
+	}
+	.display-4{
+		font-size: 28px !important;
+	}
+	.display-5{
+		font-size: 40px !important;
+	}
+	.navbar-brand{
+		font-size: 28px !important;
+	}
+	body {
+		background: url(IMG_2560-scaled-dark-768.png) no-repeat left center fixed; 
+		background-attachment:scroll
+
+	}
+	#clock {
+		font-size: 55px !important;
+	}
+	.message{
+		font-size: 25px;
+	}
+	ul{
+		font-size: 20px;
+	}
+	.h1{
+		font-size: 30px !important;
+	}
+	.announcements{
+		padding-top: 2% !important;
+		height: 280px !important;
+	}
+	.jumuah{
+		padding-top: 2% !important;
+	}
+}
