@@ -1,4 +1,4 @@
-# alsalamPrayerTimes
+# <img src="static/logo-192.png" width="50px"> alsalamPrayerTimes
 <p align="center">
  <img src="logo.png" width="30%" height="30%">
 </p>
