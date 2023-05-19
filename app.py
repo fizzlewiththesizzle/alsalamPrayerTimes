@@ -1,5 +1,5 @@
 from flask import Flask, redirect, url_for, render_template
-from hijri_converter import Hijri
+from hijridate import Hijri
 from datetime import datetime, timedelta
 import csv, datetime
 
